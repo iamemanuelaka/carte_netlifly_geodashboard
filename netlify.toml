@@ -1,0 +1,42 @@
+# ─────────────────────────────────────────────────────────────
+#  GeoDashboard SIG — Configuration Netlify
+#  Site 100% statique : aucune commande de build nécessaire
+# ─────────────────────────────────────────────────────────────
+
+[build]
+  publish = "."      # Déploie tout le dossier racine
+  # command = ""     # Aucun build — site statique pur
+
+# ── Headers de sécurité appliqués à toutes les pages ─────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options           = "SAMEORIGIN"
+    X-Content-Type-Options    = "nosniff"
+    Referrer-Policy           = "strict-origin-when-cross-origin"
+    X-XSS-Protection          = "1; mode=block"
+
+# ── Cache agressif pour les assets statiques ─────────────────
+[[headers]]
+  for = "/qgis2web*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/*.geojson"
+  [headers.values]
+    Content-Type  = "application/geo+json; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*.json"
+  [headers.values]
+    Content-Type  = "application/json; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+# ── Redirections ──────────────────────────────────────────────
+# SPA fallback : toutes les routes renvoient vers index.html
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

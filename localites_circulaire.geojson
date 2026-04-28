@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "localites_circulaire",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "lFt68", "Districts": "ABIDJAN", "Region": "ABIDJAN", "Departement": "ABIDJAN", "Sous Prefecture": "ABIDJAN", "Localites": "ANONKOUA", "type_localite": "village", "Population": "14232", "modification date": "06/10/2024", "exposant pour tca": "1", "Taux d'Accrois_ Nat.": "4,30%", "Pop_ Est.": "14844", "asciiname": "Anonkoua", "alternatenames": "", "pop": 14844 }, "geometry": { "type": "Point", "coordinates": [ -4.04872, 5.4273 ] } },
+{ "type": "Feature", "properties": { "id": "41tGo", "Districts": "ABIDJAN", "Region": "ABIDJAN", "Departement": "ABIDJAN", "Sous Prefecture": "ABIDJAN", "Localites": "ABOBO", "type_localite": "ville", "Population": "1340083", "modification date": "14/12/2022", "exposant pour tca": "3", "Taux d'Accrois_ Nat.": "4,30%", "Pop_ Est.": "1520494", "asciiname": "Abobo", "alternatenames": "Abobo,Abobo-Gare", "pop": 1520494 }, "geometry": { "type": "Point", "coordinates": [ -4.0159, 5.41613 ] } }
+]
+}

@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────
+#  GeoDashboard SIG — .gitignore
+# ─────────────────────────────────────────
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Node (si on ajoute un outil de build plus tard)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# Variables d'environnement (ne jamais committer)
+.env
+.env.local
+.env.*.local
+
+# Netlify
+.netlify/
+
+# Fichiers temporaires / backup
+*.bak
+*.tmp
+*.orig
+*.log
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# ── À décommenter si tu veux exclure les anciens exports ──────
+# qgis2web/                  # Anciens exports qgis2web (optionnel)

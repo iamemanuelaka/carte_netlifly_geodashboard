@@ -1,0 +1,23 @@
+{
+  "_comment": "Fichier d'index pour l'auto-chargement des couches GeoJSON au démarrage. Ajoute ici les fichiers GeoJSON que tu veux charger automatiquement à l'ouverture du dashboard.",
+  "version": "1.0",
+  "layers": [
+    {
+      "file": "localites_circulaire.geojson",
+      "name": "Localités Circulaire"
+    },
+    {
+      "file": "zone_impact_circulaire.geojson",
+      "name": "Zone d'Impact Circulaire"
+    },
+    {
+      "file": "voie1.geojson",
+      "name": "voie1"
+    },
+    {
+      "file": "carte__de_la_region_des_montagnes_.geojson",
+      "name": "carte__de_la_region_des_montagnes_"
+    }
+
+  ]
+}
